@@ -55,10 +55,7 @@ plt.show()
 '--' - dashed line
 '-.' - dash-dot line
 ':' - dotted line
-
-
 """
-
 
 
 # scatter plot
