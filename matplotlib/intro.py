@@ -16,6 +16,7 @@ plt.plot(x, y,color='red',linestyle='--',linewidth=4,marker='o',markersize=12,ma
 
 plt.plot(x1, y1,color='blue',linestyle='--',linewidth=4,marker='o',markersize=12,markerfacecolor='yellow',markeredgecolor='green',markeredgewidth=2,alpha=0.5,label='Line 2',zorder=2,clip_on=True,drawstyle='steps-post')
 
+plt.legend(loc='upper left',fontsize=12)
 
 plt.xlabel('X Values')
 plt.xlim(0,5)
