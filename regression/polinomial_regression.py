@@ -31,4 +31,3 @@ plt.xlabel('X')
 plt.ylabel('y')
 plt.legend()
 plt.show()
-
