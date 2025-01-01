@@ -22,19 +22,18 @@ print(df.info())
 """
 
 Data columns (total 9 columns):
- #   Column         Non-Null Count  Dtype
+#   Column         Non-Null Count  Dtype
 ---  ------         --------------  -----
- 0   Car_Name       301 non-null    object    remove
- 1   Year           301 non-null    int64
- 2   Selling_Price  301 non-null    float64   # predict
- 3   Present_Price  301 non-null    float64
- 4   Kms_Driven     301 non-null    int64
- 5   Fuel_Type      301 non-null    object
- 6   Seller_Type    301 non-null    object
- 7   Transmission   301 non-null    object
- 8   Owner          301 non-null    int64
-
-"""
+0   Car_Name       301 non-null    object    remove
+1   Year           301 non-null    int64
+2   Selling_Price  301 non-null    float64   # predict
+3   Present_Price  301 non-null    float64
+4   Kms_Driven     301 non-null    int64
+5   Fuel_Type      301 non-null    object
+6   Seller_Type    301 non-null    object
+7   Transmission   301 non-null    object
+8   Owner          301 non-null    int64
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 # covert int to float
 df['Year'] = df['Year'].astype(float)
