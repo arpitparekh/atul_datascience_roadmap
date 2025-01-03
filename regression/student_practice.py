@@ -66,8 +66,6 @@ plt.title('Actual vs Predicted Loan Approval')
 plt.tight_layout()
 plt.show()
 
-
-
 """
 
 # Add these plotting code after the existing code
