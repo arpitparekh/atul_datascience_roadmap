@@ -1,12 +1,5 @@
-# regression
-# elastic net
-# is combination of ridge and lasso regression
-
-# import kagglehub
-
-# Download latest version
-# path = kagglehub.dataset_download("stealthtechnologies/predict-student-performance-dataset")
-
+path = "/home/arpit-parekh/Downloads/archive(18)/data.csv"
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import ElasticNet
@@ -14,9 +7,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
 # Load the dataset
-df = pd.read_csv("/home/arpit-parekh/Downloads/archive(18)/data.csv")
+df = pd.read_csv(path)
 print(df.head())
 print(df.info())
+
 """
 
 Data columns (total 5 columns):
@@ -45,6 +39,8 @@ y_pred = model.predict(X_test)
 # Calculate the mean squared error
 mse = mean_squared_error(y_test, y_pred)
 print("Mean Squared Error:", mse)
+
+
 
 """
   Socioeconomic Score  1388 non-null   float64

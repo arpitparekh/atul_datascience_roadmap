@@ -29,14 +29,14 @@ print(df.info())
 
 """
 Data columns (total 6 columns):
- #   Column         Non-Null Count  Dtype
+#   Column         Non-Null Count  Dtype
 ---  ------         --------------  -----
- 0   date           1461 non-null   object
- 1   precipitation  1461 non-null   float64
- 2   temp_max       1461 non-null   float64
- 3   temp_min       1461 non-null   float64
- 4   wind           1461 non-null   float64
- 5   weather        1461 non-null   object
+0   date           1461 non-null   object
+1   precipitation  1461 non-null   float64
+2   temp_max       1461 non-null   float64
+3   temp_min       1461 non-null   float64
+4   wind           1461 non-null   float64
+5   weather        1461 non-null   object
 """
 
 df['date'] = pd.to_datetime(df['date'])
