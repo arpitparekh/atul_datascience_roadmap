@@ -4,7 +4,7 @@ path = "/home/arpit-parekh/Downloads/archive(19)/loan_approval_dataset.csv"
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.linear_model import Ridge
+from sklearn.linear_model import Ridge,ElasticNet,Lasso
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 # label encoding
@@ -50,7 +50,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 ridge = Ridge(alpha=0.5)
 ridge.fit(X_train, y_train)
 
+elastic = ElasticNet(l1_ratio=0.5, alpha=0.1)
+elastic.fit(X_train, y_train)
+
 y_pred = ridge.predict(X_test)
+y_pred1 = elastic.predict(X_test)
 
 mse = mean_squared_error(y_test, y_pred)
 print("MSE:", mse)
@@ -59,6 +63,7 @@ print("MSE:", mse)
 
 plt.figure(figsize=(10, 6))
 plt.scatter(y_test, y_pred, alpha=0.5)
+plt.scatter(y_test, y_pred1, alpha=0.5)
 plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'r--', lw=2)
 plt.xlabel('Actual Price')
 plt.ylabel('Predicted Price')
