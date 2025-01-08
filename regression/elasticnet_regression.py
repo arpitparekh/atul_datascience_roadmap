@@ -27,7 +27,6 @@ Data columns (total 5 columns):
  2   Sleep Hours          1388 non-null   float64
  3   Attendance (%)       1388 non-null   float64
  4   Grades               1388 non-null   float64
-
 """
 
 X = df.drop("Grades", axis=1)
@@ -54,7 +53,7 @@ print("Mean Squared Error:", mse)
 
 """
 
-# take value from user input
+# take value from user input  
 socio_score = float(input("Enter Socioeconomic Score: "))
 study_hours = float(input("Enter Study Hours: "))
 sleep_hours = float(input("Enter Sleep Hours: "))
