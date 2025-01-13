@@ -12,7 +12,6 @@ import time
 
 # os.walk()
 
-
 def read_images(folder_path):
   image_list = []    # list to store all the images
   label_list = []    # list to store all the labels
@@ -40,8 +39,8 @@ print(label_list)
 X = np.array(image_list)
 y = np.array(label_list)
 
-print(X.shape)
-print(y.shape)
+# print(X.shape)
+# print(y.shape)
 
 current_time = time.time()
 print(current_time)
