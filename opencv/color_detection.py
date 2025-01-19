@@ -11,7 +11,7 @@ while True:
         break
 
     img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-  
+
 
     # blue color
     # lower_blue = np.array([90, 50, 50])
