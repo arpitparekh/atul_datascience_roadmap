@@ -8,10 +8,6 @@ from sklearn.datasets import make_blobs
 
 X,y = make_blobs(n_samples=300, centers=3,cluster_std=5 ,random_state=42)
 
-print(X)
-print()
-print(y)
-
 # now create a clusters from random data
 model = KMeans(n_clusters=4,random_state=42)
 model.fit(X)
