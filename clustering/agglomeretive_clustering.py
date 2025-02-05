@@ -6,10 +6,11 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import AgglomerativeClustering
 from PIL import Image
 
+# pip install pillow
+
 def readImages(path):
   counter = 0
   list = []
-  counterList = []
 
   for root, dirs, files in os.walk(path):
     for file in files:
@@ -30,7 +31,7 @@ def readImages(path):
 
 array =  readImages(path)
 # Create a clustering model
-clustering = AgglomerativeClustering(n_clusters=10)
+clustering = AgglomerativeClustering()
 clustering.fit(array)
 # Get the cluster labels for each data point
 labels = clustering.labels_
